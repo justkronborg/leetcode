@@ -24,3 +24,32 @@ impl Solution {
         rows.concat()
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_example1() {
+        let s = "PAYPALISHIRING".to_string();
+        let num_rows = 3;
+        let expected = "PAHNAPLSIIGYIR".to_string();
+        assert_eq!(Solution::convert(s, num_rows), expected);
+    }
+
+    #[test]
+    fn test_example2() {
+        let s = "PAYPALISHIRING".to_string();
+        let num_rows = 4;
+        let expected = "PINALSIGYAHRPI".to_string();
+        assert_eq!(Solution::convert(s, num_rows), expected);
+    }
+
+    #[test]
+    fn test_example3() {
+        let s = "A".to_string();
+        let num_rows = 1;
+        let expected = "A".to_string();
+        assert_eq!(Solution::convert(s, num_rows), expected);
+    }
+}

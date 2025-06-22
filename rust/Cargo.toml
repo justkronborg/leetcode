@@ -4,3 +4,4 @@ authors = ["Mads Just Kronborg"]
 description = "Rust solutions to LeetCode problems"
 repository = "https://github.com/justkronborg/leetcode"
 edition = "2024"
+version = "0.1.0"
